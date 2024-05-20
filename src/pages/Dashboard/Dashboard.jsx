@@ -1,15 +1,13 @@
-import CreateGroupThrift from "../../components/CreateGroupThrift"
-import CreateSingleThrift from "../../components/CreateSingleThrift"
-import { NavLink } from 'react-router-dom'
 import UseFetchRequests from "../../Hooks/UseFetchRequests"
 import UseFetchUserSingle from "../../Hooks/UseFetchUserSingle"
 import UseFetchGroupThrift from "../../Hooks/UseFetchGroupThrift"
+import UseFetchUserGroup from "../../Hooks/UseFetchUserGroup"
 
 const Dashboard = () => {
     const allRequests = UseFetchRequests();
     const allUserRequests = UseFetchUserSingle();
     const allGroupRequests = UseFetchGroupThrift();
-    const allUserGroupRequests = UseFetchGroupThrift();
+    const allUserGroupRequests = UseFetchUserGroup();
    
   return (
     <main className='text-white'>
@@ -36,7 +34,7 @@ const Dashboard = () => {
         </div>
         
       <div className="px-8 py-10 bg-[#060E37] rounded-lg">
-        <div className="flex justify-between items-center">
+        {/* <div className="flex justify-between items-center">
           <h2 className="text-[18px] lg:text-[22px] md:text-[22px] font-bold">
             Browse and find contribution modules to join
           </h2>
@@ -44,7 +42,7 @@ const Dashboard = () => {
             <CreateGroupThrift />
             <CreateSingleThrift />
           </div>
-        </div>
+        </div> */}
         </div>
   
     </main>

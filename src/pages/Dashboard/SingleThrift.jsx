@@ -34,9 +34,9 @@ const SingleThrift = () => {
         </div>
       </section>
       <h2 className='text-[20px] lg:text-[28px] md:text-[28px] font-bold my-6'>Active Thrifts</h2>
-        {allUserRequests > 0 ? (
       <section className="flex justify-between flex-wrap mt-8">
-      {paginatedData.map((info, index) => (
+      {paginatedData.length > 0 ? (
+          paginatedData.map((info, index) => (
         <div className="lg:w-[30%] md:w-[30%] w-[100%] p-6 rounded-lg shadow-md shadow-[#3b3b3b]" key={index}>
           <Link to={`/dashboard/singlethrift/${info.addInfo}`}>
             <img
@@ -48,12 +48,14 @@ const SingleThrift = () => {
             <p className="font-normal text-justify text-white text-xs">Save towards a goal.</p>
           </Link>
         </div>
-      ))}
-      </section>) :   
-      <div className='flex flex-col items-center'>
-        <RiFolderWarningFill className='text-[48px] mb-4'/>
-        <h2 className='text-[18px] lg:text-[24px] md:text-[24px] mb-4'>No active thrift yet!</h2></div>}
-
+          ))
+        ) : (
+          <div className='flex flex-col items-center w-full'>
+            <RiFolderWarningFill className='text-[48px] mb-4'/>
+            <h2 className='text-[18px] lg:text-[24px] md:text-[24px] mb-4'>No active thrift yet!</h2>
+          </div>
+        )}
+      </section>
       <div className='text-white h-14 mt-6 w-[100%] lg:w-[50%] md:w-[50%] mx-auto flex justify-center'>
       {paginatedData > itemsPerPage ? (<Stack spacing={2}>
       <Pagination
