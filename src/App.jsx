@@ -15,6 +15,8 @@ import SingleDetails from "./pages/SingleDetails";
 import About from "./pages/About";
 import GroupThrift from "./pages/Dashboard/GroupThrift";
 import GroupDetails from "./pages/GroupDetails";
+import Message from "./pages/Dashboard/Message";
+import Setting from "./pages/Dashboard/Setting";
 
 configWeb3Modal();
 
@@ -30,10 +32,11 @@ const router = createBrowserRouter(
         <Route index element={<Dashboard />} />
         <Route path="singlethrift" element={<SingleThrift />} />
         <Route path="/dashboard/singlethrift/:singlethriftId" element={<SingleDetails />} />
-       
         <Route path="groupthrift" element={<GroupThrift />} />
         <Route path="/dashboard/groupthrift/:groupthriftId" element={<GroupDetails />} />
-       </Route>
+        <Route path="message" element={<Message />} />
+        <Route path="setting" element={<Setting />} />
+      </Route>
     </Route>
   )
 );

@@ -146,47 +146,67 @@ const CreateGroupThrift = () => {
           <input
             type="text"
             placeholder="Number of Members"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => setMembers(e.target.value)}
           />
           <input
             type="text"
             placeholder="Addresses of members"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => setAddMember(e.target.value.split(','))}
           />
           <input
             type="text"
             placeholder="Goal description"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => setDescription(e.target.value)}
           />
           <input
             type="text"
             placeholder="target"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => setTarget(e.target.value)}
           />
           <input
             type="text"
-            placeholder="duration"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            placeholder="duration in weeks"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => setDuration(e.target.value)}
           />
-          <input
+          <InputLabel id="demo-simple-select-label" sx={{ color: "white" }}>Start Time</InputLabel>
+          <Select
             type="text"
             placeholder="Start time"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            id="demo-simple-select-label"
+            labelId="demo-simple-select-label"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => seTStartTime(Number(e.target.value))}
-          />
-          <input
+            sx={{
+              backgroundColor: "#ffffff",
+              outline: "none",
+              color: "black",
+
+            }}
+          >
+            <MenuItem>Now</MenuItem>
+            <MenuItem>7days time</MenuItem>
+            <MenuItem>14days time</MenuItem>
+            <MenuItem>30days time</MenuItem>
+          </Select>
+          <InputLabel id="demo-simple-select-label" sx={{ color: "white" }}>Saving interval</InputLabel>
+          <Select
             type="text"
             placeholder="Saving interval"
-            className="bg-[#B1B7DD] border border-[#B1B7DD] rounded w-full py-2 px-3 text-[#0A134C] mb-3 leading-tight focus:outline-none focus:shadow-outline"
+            className="bg-white border border-[#B1B7DD] rounded w-full py-2 px-3 text-black mb-3 leading-tight focus:outline-none focus:shadow-outline font-bold"
             onChange={(e) => setSavingsInterval(e.target.value)}
-          />
+          >
+            <MenuItem>Daily</MenuItem>
+            <MenuItem>Weekly</MenuItem>
+            <MenuItem>Bi-Weekly</MenuItem>
+            <MenuItem>Monthly</MenuItem>
+          </Select>
           <button
-            className="bg-gradient-to-r from-[#9C0F94] to-[#142698] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline min-w-full"
+            className="bg-gradient-to-r from-[#9C0F94] to-[#142698] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline min-w-full "
             onClick={handleCreateGroupThrift}
           >
             Create

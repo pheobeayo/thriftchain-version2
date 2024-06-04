@@ -1,4 +1,4 @@
-import React, { useState, useLocation } from 'react'
+import { useState } from 'react'
 import CreateSingleThrift from "../../components/CreateSingleThrift";
 import { RiFolderWarningFill } from "react-icons/ri";
 import UseFetchUserSingle from '../../Hooks/UseFetchUserSingle';
