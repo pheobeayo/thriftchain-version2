@@ -6,7 +6,8 @@ const Great = () => {
           ThriftChain is great for:
         </h2>
         <div className="bg-[#070624] grid-cols-4 gap-4 md:flex md:flex-row">
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-[#060E37] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-[#060E37] sm:shrink-0 sm:grow sm:basis-0 border-white border-2 hover:skew-x-12  
+               duration-150 ease-in-out">
             <div className="w-full h-1/2 shadow-md mx-2">
               <h3 className="font-bold text-white text-lg mx-4">
                 Individual Savers
@@ -18,7 +19,8 @@ const Great = () => {
             </div>
           </div>
 
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-[#060E37] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-[#060E37] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+               duration-150 ease-in-out">
             <div className="w-full h-1/2  shadow-md mx-2">
               <h3 className="font-bold text-white text-lg mx-4">
                 Group Savers
@@ -30,7 +32,8 @@ const Great = () => {
               </p>
             </div>
           </div>
-          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-[#060E37] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+          <div className="mx-3 mt-6 flex flex-col rounded-lg bg-[#060E37] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+               duration-150 ease-in-out">
             <div className="w-full h-1/2 shadow-md mx-2">
               <h3 className="font-bold text-white text-lg mx-4">
                 Asset Managers

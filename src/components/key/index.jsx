@@ -25,7 +25,8 @@ const Key = () => {
                     </h2>
                     <div className='bg-[#070624] grid-cols-4 gap-4 md:flex md:flex-row h-1/2'>
                         <div
-                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+                            duration-150 ease-in-out">
 
                             <div className="w-full shadow-md">
                                 <h3 className="font-bold text-white text-center p-2 text-lg">
@@ -55,7 +56,8 @@ const Key = () => {
                         </div>
 
                         <div
-                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+                            duration-150 ease-in-out">
 
                             <div className="w-full h-1/2 shadow-md">
                                 <h3 className="font-bold text-white text-center p-2 text-lg">
@@ -83,7 +85,8 @@ const Key = () => {
 
                         </div>
                         <div
-                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+                            duration-150 ease-in-out">
                             <div className="w-full h-1/2 shadow-md">
                                 <h3 className="font-bold text-white text-center p-2 text-lg">
                                     Smart Contract Automation
@@ -113,7 +116,8 @@ const Key = () => {
                     </div>
                     <div className='bg-[#070624] grid-cols-4 gap-4 md:flex md:flex-row'>
                         <div
-                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+                            duration-150 ease-in-out">
 
                             <div className="w-full h-1/2 shadow-md">
                                 <h3 className="font-bold text-white text-center p-2 text-lg">
@@ -139,7 +143,8 @@ const Key = () => {
                         </div>
 
                         <div
-                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2  hover:skew-x-12  
+                            duration-150 ease-in-out">
 
                             <div className="w-full h-1/2 shadow-md">
                                 <h3 className="font-bold text-white text-center p-2 text-lg">
@@ -167,7 +172,8 @@ const Key = () => {
                             />
                         </div>
                         <div
-                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2">
+                            className="h-1/2 mx-3 mt-6 flex flex-col rounded-lg bg-[#070624] sm:shrink-0 sm:grow sm:basis-0 border-white border-2 hover:skew-x-12  
+                            duration-150 ease-in-out">
 
                             <div className="w-full h-1/2 shadow-md">
                                 <h3 className="font-bold text-white text-center p-2 text-lg">
